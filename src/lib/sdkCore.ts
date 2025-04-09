@@ -2,7 +2,7 @@ export { AbiRegistry } from "@multiversx/sdk-core";
 export { Address } from "@multiversx/sdk-core";
 export { AddressValue } from "@multiversx/sdk-core";
 export { ContractFunction } from "@multiversx/sdk-core";
-export type { IProviderFactory } from "@multiversx/sdk-dapp-core/out/core/providers/types/providerFactory.types";
+export type { IProviderFactory } from "@multiversx/sdk-dapp-core";
 export { Message, MessageComputer } from "@multiversx/sdk-core";
 export { ProxyNetworkProvider } from "@multiversx/sdk-core";
 export { SmartContract } from "@multiversx/sdk-core";
