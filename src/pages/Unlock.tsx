@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  useGetLoginInfo,
-  useGetAccount,
-  ProviderFactory,
-  ProviderTypeEnum,
-} from "../lib";
+import { useGetLoginInfo, useGetAccount, ProviderFactory } from "../lib";
 import { useNavigate } from "react-router-dom";
 import { IProviderFactory } from "../lib";
 
@@ -24,6 +19,7 @@ const Unlock = () => {
       type,
       anchor,
     });
+    // provider.getProvider().init();
     const loginData = await provider?.login();
 
     if (!loginData) return;
@@ -46,9 +42,7 @@ const Unlock = () => {
 
           <div className="space-y-4">
             <button
-              onClick={() =>
-                handleLogin({ type: ProviderTypeEnum.crossWindow })
-              }
+              onClick={() => handleLogin({ type: ProviderTypeEnum.extension })}
               className="w-full py-3 px-4 bg-gray-600 hover:bg-gray-700 text-white rounded-lg font-medium transition-colors duration-200 flex items-center justify-center space-x-2"
             >
               <img
