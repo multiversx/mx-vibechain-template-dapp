@@ -1,5 +1,10 @@
 import React from "react";
-import { useGetLoginInfo, useGetAccount, ProviderFactory } from "../lib";
+import {
+  useGetLoginInfo,
+  useGetAccount,
+  ProviderFactory,
+  ProviderTypeEnum,
+} from "../lib";
 import { useNavigate } from "react-router-dom";
 import { IProviderFactory } from "../lib";
 
