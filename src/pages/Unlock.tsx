@@ -47,7 +47,9 @@ const Unlock = () => {
 
           <div className="space-y-4">
             <button
-              onClick={() => handleLogin({ type: ProviderTypeEnum.extension })}
+              onClick={() =>
+                handleLogin({ type: ProviderTypeEnum.crossWindow })
+              }
               className="w-full py-3 px-4 bg-gray-600 hover:bg-gray-700 text-white rounded-lg font-medium transition-colors duration-200 flex items-center justify-center space-x-2"
             >
               <img
